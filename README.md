@@ -2,17 +2,17 @@
 A website generator that generates the posters and youtube trailers of your favorite movies.
 
 ## Requried Softwares
-1. [Python 3](https://www.python.org/downloads/)
+1. <a href="https://www.python.org/downloads/" target="_blank"> Python 3</a>
 2. Any editor to edit the files
 
 ## How to use
-1. Obtain OMDb API key from [here.](http://www.omdbapi.com/apikey.aspx)
+1. Obtain OMDb API key from <a href="http://www.omdbapi.com/apikey.aspx" target="_blank">here.</a>
 2. Open `entertainment_center.py` file and add the OMBDb API key on line number 9.
 
       ```
       OMDBapikey = "" # Add your api key in between the quotes
       ```
-3. Obtain youtube API key from [here.](https://developers.google.com/youtube/v3/getting-started)
+3. Obtain youtube API key from <a href="https://developers.google.com/youtube/v3/getting-started" target="_blank">here.</a>
 4. In the same file add the youtube key on line number 10.
       ```
       youtubeAPIkey = "" # Add your youtube api key in between the quotes
