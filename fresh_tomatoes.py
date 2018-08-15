@@ -4,6 +4,7 @@ import re
 
 # Styles and scripting for the page
 main_page_head = '''
+<html>
 <head>
     <meta charset="utf-8">
     <title>My Favorite Movies</title>
