@@ -29,7 +29,8 @@ def details(title):
     ID = getTrailerID(title)
     movies.append(media.Movie(loaded_json['Title'],loaded_json['Plot'],loaded_json['Poster'],ID))
      
+
 for name in names:
-    details(name)
+    details(name.get('name'))
 
 fresh_tomatoes.open_movies_page(movies)
