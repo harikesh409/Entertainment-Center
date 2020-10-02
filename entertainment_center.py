@@ -4,8 +4,10 @@ import urllib.parse
 import json
 import fresh_tomatoes
 
+f = open('data.json',)  # Open json file
+
 movies = [] # To store all the instance variables
-names = ["forrest gump","Avengers","avatar","inception","fight club","the matrix"] # List that contains names of movies
+names = json.load(f)  # Load json data
 OMDBapikey = "" # Add your api key that is obtained from omdbapi
 youtubeAPIkey = "" # Add your youtube api key
 
@@ -27,7 +29,8 @@ def details(title):
     ID = getTrailerID(title)
     movies.append(media.Movie(loaded_json['Title'],loaded_json['Plot'],loaded_json['Poster'],ID))
      
+
 for name in names:
-    details(name)
+    details(name.get('name'))
 
 fresh_tomatoes.open_movies_page(movies)
